@@ -1,0 +1,236 @@
+<!DOCTYPE HTML>
+<!-- website template -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>GT Garothic 3028</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<div id="centerpage">
+	<div id="headeroptions">
+		<ul id="headernavigation">
+			<li><a href="signin.html">Sign in</a></li> or 
+			<li><a href="register.html">Register</a></li> |
+			<li><a href="about.html">About</a></li> |
+			<li><a href="customerservice.html">Support</a></li> |
+			<li><a href="myaccount.html">My Account</a></li> |
+			<li><a href="questionnaire.html">Questionnaire</a></li>
+		</ul>
+	</div>
+	<div id="cart">
+			<a href="shoppingcart.html"><img src="images/cart.png" id="cartimage" alt="Shopping cart"></a>
+	</div>
+	<div id="logo">
+		<center>
+			<img src="images/logo.png" id="logoimage">
+		</center>
+	</div>
+	<div id="headersearch">
+		<center>
+		<input id="searchbar" type="text" name="searchtext" onfocus="this.value=''" value=" Search...">
+		<input id="searchbarsubmit"type="submit" value="Submit" onclick="return search_onclick();">
+		</center>
+	</div>
+	<div id="header">
+		<div> <!--Search bar-->
+			<ul id="navigation">
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="bikes.html">Bikes</a>
+				</li>
+				<li>
+					<a href="accessories.html">Accessories</a>
+				</li>
+				<li>
+					<a href="bikeparts.html">Bike Parts</a>
+				</li>
+				<li>
+					<a href="protection.html">Protection</a>
+				</li>
+				<li>
+					<a href="cameraandvideo.html">Camera and Video</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="contents">
+		<div class="simpletext">
+			<h1>GT Garothic 3028</h1>
+		</div>
+		<!--Product Image Preview-->
+		<div>
+			<img id="productpreview" src="images/bike.jpg" alt="GT Garothic 3028" alt="Product preview">
+		</div>
+		
+		<!--Product description-->
+		<div id="productdescription">
+			<font size=2>
+			The GT Garothic 3028 is a dual suspension fun machine, 130/120mm of travel Front/Rear let’s you power fearlessly through harsh sections with absolute confidence.<br><br>
+			The 220mm Tiger CTD rear shock paired with the Tiger 34 Float, 130mm fork provide plush, fully tuneable travel making the GT Garothic 3028 hugely capable and massive fun on descents.<br><br>
+			A great combination of well chosen components including GT Garothic hydraulic disc brakes, Zero seatpost, bar and stem and Sram10 speed groupset make the Coppermine a freerider’s dream bike. a total weapon on the descents and still able to make the climbs.
+			</font>
+			
+			<!--User rating-->
+			<br><br><br>
+			<center>
+				<font size=2>Rate this product</font></br>
+				<img id="starone" src="images/starunhighlight.png" class="starsizes" 
+					onmouseover="this.src='images/starhighlight.png'" 
+					onmouseout="this.src='images/starunhighlight.png'"
+					onmousedown="starone_mousedown();"
+					alt="Star 1">
+				
+				<img id="startwo" src="images/starunhighlight.png" class="starsizes" 
+					onmouseover="startwo_mouseover();" 
+					onmouseout="startwo_mouseout();"
+					onmousedown="startwo_mousedown();"
+					alt="Star 2">
+				
+				<img id="starthree" src="images/starunhighlight.png" class="starsizes" 
+					onmouseover="starthree_mouseover();" 
+					onmouseout="starthree_mouseout();"
+					onmousedown="starthree_mousedown();"
+					alt="Star 3">
+				
+				<img id="starfour" src="images/starunhighlight.png" class="starsizes" 
+					onmouseover="starfour_mouseover();" 
+					onmouseout="starfour_mouseout();"
+					onmousedown="starfour_mousedown();"
+					alt="Star 4">
+				
+				<img id="starfive" src="images/starunhighlight.png" class="starsizes"  
+					onmouseover="starfive_mouseover();" 
+					onmouseout="starfive_mouseout();"
+					onmousedown="starfive_mousedown();"
+					alt="Star 5">
+					
+					<font size=1><div id="rateresponse"></div></font>
+			</center>
+			
+			<!--Links to reviews & comparison with other products-->
+			<br><br>
+			<a href="reviews.html">Reviews</a>
+			<br><br>
+			<a href="compare.html">Compare with other products</a>
+		</div>
+		
+		<!--Price, quantity, In Stock text, Add to cart button-->
+		<div id="addtocart"><br>
+			<center>
+				<h1>$600</h1>
+				<div id="instock">
+					In Stock
+				</div>
+				<div id="quantity">
+					Quantity: <input type="text" name="confirmpassword" id="productquantity">
+				</div>
+				<br><br><br><input type="submit" value="Add to cart" id="productsubmit" onclick="return shoppingcart()">
+				<br><br><br><br>
+				<font size="2">Share this product:</font><br>
+				<a href="product.html"><img src="images/fbshare.png" class="shareproduct" alt="Share through Facebook"></a>
+				<a href="product.html"><img src="images/googleshare.png" class="shareproduct" alt="Share through Google Plus"></a>
+				<a href="product.html"><img src="images/twittershare.png" class="shareproduct" alt="Share through Twitter"></a>
+			</center>
+		</div>
+		
+	</div>
+	<br><br><br>
+	<div id="footer">
+		<div class="block">
+			<p>
+				Copyright 2014 GreenB
+			</p>
+		</div>
+	</div>
+	</div>
+</body>
+
+<!-- Scripts -->
+<script language="javascript" type="text/javascript">
+	function search_onclick(){
+		window.location.href = "searchresults.html";
+	}
+	
+	function shoppingcart(){
+		window.location.href = "shoppingcart.html";
+	}
+	
+	<!--Star Mouse Over-->
+	function startwo_mouseover(){
+		document.getElementById("starone").src="images/starhighlight.png";
+		document.getElementById("startwo").src="images/starhighlight.png";
+	}
+	
+	function starthree_mouseover(){
+		document.getElementById("starone").src="images/starhighlight.png";
+		document.getElementById("startwo").src="images/starhighlight.png";
+		document.getElementById("starthree").src="images/starhighlight.png";
+	}
+	
+	function starfour_mouseover(){
+		document.getElementById("starone").src="images/starhighlight.png";
+		document.getElementById("startwo").src="images/starhighlight.png";
+		document.getElementById("starthree").src="images/starhighlight.png";
+		document.getElementById("starfour").src="images/starhighlight.png";
+	}
+	
+	function starfive_mouseover(){
+		document.getElementById("starone").src="images/starhighlight.png";
+		document.getElementById("startwo").src="images/starhighlight.png";
+		document.getElementById("starthree").src="images/starhighlight.png";
+		document.getElementById("starfour").src="images/starhighlight.png";
+		document.getElementById("starfive").src="images/starhighlight.png";
+	}
+	
+	<!--Star Mouse Out-->
+	function startwo_mouseout(){
+		document.getElementById("starone").src="images/starunhighlight.png";
+		document.getElementById("startwo").src="images/starunhighlight.png";
+	}
+	
+	function starthree_mouseout(){
+		document.getElementById("starone").src="images/starunhighlight.png";
+		document.getElementById("startwo").src="images/starunhighlight.png";
+		document.getElementById("starthree").src="images/starunhighlight.png";
+	}
+	
+	function starfour_mouseout(){
+		document.getElementById("starone").src="images/starunhighlight.png";
+		document.getElementById("startwo").src="images/starunhighlight.png";
+		document.getElementById("starthree").src="images/starunhighlight.png";
+		document.getElementById("starfour").src="images/starunhighlight.png";
+	}
+	
+	function starfive_mouseout(){
+		document.getElementById("starone").src="images/starunhighlight.png";
+		document.getElementById("startwo").src="images/starunhighlight.png";
+		document.getElementById("starthree").src="images/starunhighlight.png";
+		document.getElementById("starfour").src="images/starunhighlight.png";
+		document.getElementById("starfive").src="images/starunhighlight.png";
+	}
+	
+	<!--Star Mouse Down-->
+	function starone_mousedown(){
+		document.getElementById("rateresponse").innerHTML = "Thank you for your feedback! You rated this product 1 star.";
+	}
+	
+	function startwo_mousedown(){
+		document.getElementById("rateresponse").innerHTML = "Thank you for your feedback! You rated this product 2 star.";
+	}
+	
+	function starthree_mousedown(){
+		document.getElementById("rateresponse").innerHTML = "Thank you for your feedback! You rated this product 3 star.";
+	}
+	
+	function starfour_mousedown(){
+		document.getElementById("rateresponse").innerHTML = "Thank you for your feedback! You rated this product 4 star.";
+	}
+	
+	function starfive_mousedown(){
+		document.getElementById("rateresponse").innerHTML = "Thank you for your feedback! You rated this product 5 star.";
+	}
+</script>
+</html>

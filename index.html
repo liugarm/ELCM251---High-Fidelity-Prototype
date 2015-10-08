@@ -1,0 +1,212 @@
+<!DOCTYPE HTML>
+<!-- website template -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Home</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	
+	<script type="text/javascript">
+		var image1 = new Image()
+		image1.src = "images/bike.jpg"
+		
+		var image2 = new Image()
+		image2.src = "images/bike2.jpg"
+		
+		var image3 = new Image()
+		image3.src = "images/bike3.jpg"
+		
+		var image4 = new Image()
+		image4.src = "images/bike4.jpg"
+	</script>
+</head>
+<body>
+	<div id="centerpage">
+	<div id="headeroptions">
+		<ul id="headernavigation">
+			<li><a href="signin.html">Sign in</a></li> or 
+			<li><a href="register.html">Register</a></li> |
+			<li><a href="about.html">About</a></li> |
+			<li><a href="customerservice.html">Support</a></li> |
+			<li><a href="myaccount.html">My Account</a></li> |
+			<li><a href="questionnaire.html">Questionnaire</a></li>
+		</ul>
+	</div>
+	<div id="cart">
+			<a href="shoppingcart.html"><img id="cartimage" src="images/cart.png" alt="Shopping cart"></a>
+	</div>
+	<div id="logo">
+		<center>
+			<img id="logoimage" src="images/logo.png" alt="GreenB logo">
+		</center>
+	</div>
+	<div id="headersearch">
+		<center>
+		<input id="searchbar" type="text" name="searchtext" onfocus="this.value=''" value=" Search...">
+		<input id="searchbarsubmit" type="submit" value="Submit" onclick="return search_onclick();">
+		</center>
+	</div>
+	<div id="header">
+		<div> <!--Search bar-->
+			<ul id="navigation">
+				<li class="active">
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="bikes.html">Bikes</a>
+				</li>
+				<li>
+					<a href="accessories.html">Accessories</a>
+				</li>
+				<li>
+					<a href="bikeparts.html">Bike Parts</a>
+				</li>
+				<li>
+					<a href="protection.html">Protection</a>
+				</li>
+				<li>
+					<a href="cameraandvideo.html">Camera and Video</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	<div id="contents">
+		<h1>Latest Products</h1>
+		<!--Slide show-->
+		<div id="onsaledisplay">
+			<center><img src = "images/bike.jpg" width="500" height="300" name="slide"/ alt="Latest products"></center>
+		</div>
+		<div id="onsaledisplaycircles">
+			<br>
+			<center>
+				<img class="circle_links" id="circle1" src="images/selectedcircle.png" alt="Circle" onmouseover="return circleone();">
+				<img class="circle_links" id="circle2" src="images/unselectedcircle.png" alt="Circle" onmouseover="return circletwo();">
+				<img class="circle_links" id="circle3" src="images/unselectedcircle.png" alt="Circle" onmouseover="return circlethree();">
+				<img class="circle_links" id="circle4" src="images/unselectedcircle.png" alt="Circle" onmouseover="return circlefour();">
+			</center>
+		</div>
+		
+		<div id="sales">
+			<img src="images/sale.jpg" id="fiftyoffsale" alt="50% off">
+		</div>
+		
+		<br><br>
+		
+		<h1>Updates</h1>
+		<hr>
+		<p>
+			<h4>Spring is here, time to get back onto the track <p align="right">10/09/2014</p></h4>
+			<font size=2>Since winter is finally over, we can all now get back onto the track with the latest bikes. We have the latest bikes
+			and bike equipment for everyone, so take your time and check out our latest products!</font>
+			<hr>
+		</p>
+		
+		<p>
+			<h4>Bike customisation <p align="right">12/08/2014</p></h4>
+			<font size=2>Tired of buying a bike where you don't get a say in what kind of parts it has? We sell different bike parts, allowing you to customise your bikes until you are fully satisfied. Click <a href="bikeparts.html">here</a> to browse!</font>
+			<hr>
+		</p>
+		
+		<br>
+		<h1>Why buy a GreenB?</h1>
+		<center>
+			<iframe width="853" height="480" src="http://www.youtube.com/embed/bSKSGcV6sMc?rel=0" frameborder="0" allowfullscreen></iframe>
+		</center>
+		
+		<br><br><hr>
+		<h1>Ride like the professionals!</h1>
+		<center>
+			<iframe width="853" height="480" src="http://www.youtube.com/embed/QQvsPmTwU-A?rel=0start=0&end=26" frameborder="0" allowfullscreen></iframe>
+		</center>
+	</div>
+	
+	<div id="footer">
+		<div class="block">
+			<p>
+				Copyright 2014 GreenB
+			</p>
+		</div>
+	</div>
+	</div>
+</body>
+
+<!-- Scripts -->
+<script language="javascript" type="text/javascript">
+	function search_onclick(){
+		console.log("test");
+		window.location.href = "searchresults.html";
+	}
+	
+	//Image slider
+	var step = 1;
+	function slide(){
+		document.images.slide.src = eval("image"+step+".src");
+		circleslide();
+		if(step<4){
+			step++;
+		}
+		else{
+			step = 1;
+		}
+		
+		setTimeout("slide()", 2500);
+	}
+	slide();
+	
+	function circleslide(){
+		if(step==1){
+			document.getElementById("circle1").src="images/unselectedcircle.png";
+			document.getElementById("circle2").src="images/unselectedcircle.png";
+			document.getElementById("circle3").src="images/unselectedcircle.png";
+			document.getElementById("circle4").src="images/unselectedcircle.png";
+			document.getElementById("circle1").src="images/selectedcircle.png";
+		}
+		if(step==2){
+			document.getElementById("circle1").src="images/unselectedcircle.png";
+			document.getElementById("circle2").src="images/unselectedcircle.png";
+			document.getElementById("circle3").src="images/unselectedcircle.png";
+			document.getElementById("circle4").src="images/unselectedcircle.png";
+			document.getElementById("circle2").src="images/selectedcircle.png";
+		}
+		if(step==3){
+			document.getElementById("circle1").src="images/unselectedcircle.png";
+			document.getElementById("circle2").src="images/unselectedcircle.png";
+			document.getElementById("circle3").src="images/unselectedcircle.png";
+			document.getElementById("circle4").src="images/unselectedcircle.png";
+			document.getElementById("circle3").src="images/selectedcircle.png";
+		}
+		if(step==4){
+			document.getElementById("circle1").src="images/unselectedcircle.png";
+			document.getElementById("circle2").src="images/unselectedcircle.png";
+			document.getElementById("circle3").src="images/unselectedcircle.png";
+			document.getElementById("circle4").src="images/unselectedcircle.png";
+			document.getElementById("circle4").src="images/selectedcircle.png";
+		}
+	}
+	
+	function circleone(){
+		document.images.slide.src = eval("image"+1+".src");
+		step = 1;
+		circleslide();
+	}
+	
+	function circletwo(){
+		document.images.slide.src = eval("image"+2+".src");
+		step = 2;
+		circleslide();
+	}
+	
+	function circlethree(){
+		document.images.slide.src = eval("image"+3+".src");
+		step = 3;
+		circleslide();
+	}
+	
+	function circlefour(){
+		document.images.slide.src = eval("image"+4+".src");
+		step = 4;
+		circleslide();
+	}
+</script>
+</html>

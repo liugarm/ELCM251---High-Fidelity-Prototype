@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<!-- website template -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Sign In</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<div id="centerpage">
+	<div id="headeroptions">
+		<ul id="headernavigation">
+			<li class="active"><a href="signin.html">Sign in</a></li> or 
+			<li><a href="register.html">Register</a></li> |
+			<li><a href="about.html">About</a></li> |
+			<li><a href="customerservice.html">Support</a></li> |
+			<li><a href="myaccount.html">My Account</a></li> |
+			<li><a href="questionnaire.html">Questionnaire</a></li>
+		</ul>
+	</div>
+	<div id="cart">
+			<a href="shoppingcart.html"><img src="images/cart.png" id="cartimage" alt="Shopping cart"></a>
+	</div>
+	<div id="logo">
+		<center>
+			<img src="images/logo.png" id="logoimage">
+		</center>
+	</div>
+	<div id="headersearch">
+		<center>
+		<input id="searchbar" type="text" name="searchtext" onfocus="this.value=''" value=" Search...">
+		<input id="searchbarsubmit"type="submit" value="Submit" onclick="return search_onclick();">
+		</center>
+	</div>
+	<div id="header">
+		<div> <!--Search bar-->
+			<ul id="navigation">
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="bikes.html">Bikes</a>
+				</li>
+				<li>
+					<a href="accessories.html">Accessories</a>
+				</li>
+				<li>
+					<a href="bikeparts.html">Bike Parts</a>
+				</li>
+				<li>
+					<a href="protection.html">Protection</a>
+				</li>
+				<li>
+					<a href="cameraandvideo.html">Camera and Video</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="contents">
+		<div id="signinbox">
+			<center><br><h1>Sign In</h1></center>
+			<ul>
+				Email or User ID:<br><input type="text" name="username" id="signintext">
+			</ul>
+			<ul>
+				Password:<br><input type="text" name="password" id="signintext">
+			</ul>
+			<font size=2>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				<a href="signin.html" id="linkunhighlight">Forgot your password?</a>
+			</font>
+			<ul>
+				<input type="submit" value="Submit" onclick="return signin_onclick();" id="signinsubmit">
+			</ul>
+		</div>
+		
+		<!-- Register box - to the right -->
+		<div id="registerhere">
+			<center>
+				<br><h1>Don't have account?</h1>
+				<font size="3">It's easy to make one!</font><br>
+				<br><br>
+				
+				<input type="submit" value="Register" onclick="return register_onclick();" id="signinregbutton">
+			</center>
+		</div>
+	</div>
+	<br><br><br>
+	<div id="footer">
+		<div class="block">
+			<p>
+				Copyright 2014 GreenB
+			</p>
+		</div>
+	</div>
+	</div>
+</body>
+
+<!-- Scripts -->
+<script language="javascript" type="text/javascript">
+	function home_onclick(){
+		window.location.href = "index.html";
+	}
+	
+	function register_onclick(){
+		window.location.href = "register.html";
+	}
+	
+	function signin_onclick(){
+		window.location.href = "signinconfirmation.html";
+	}
+</script>
+</html>

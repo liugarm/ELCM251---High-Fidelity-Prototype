@@ -1,0 +1,216 @@
+<!DOCTYPE HTML>
+<!-- website template -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Shopping Cart</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<div id="centerpage">
+	<div id="headeroptions">
+		<ul id="headernavigation">
+			<li><a href="signin.html">Sign in</a></li> or 
+			<li><a href="register.html">Register</a></li> |
+			<li><a href="about.html">About</a></li> |
+			<li><a href="customerservice.html">Support</a></li> |
+			<li class="active"><a href="myaccount.html">My Account</a></li> |
+			<li><a href="questionnaire.html">Questionnaire</a></li>
+		</ul>
+	</div>
+	<div id="cart">
+			<a href="shoppingcart.html"><img src="images/cart.png" id="cartimage" alt="Shopping cart"></a>
+	</div>
+	<div id="logo">
+		<center>
+			<img src="images/logo.png" id="logoimage">
+		</center>
+	</div>
+	<div id="headersearch">
+		<center>
+		<input id="searchbar" type="text" name="searchtext" onfocus="this.value=''" value=" Search...">
+		<input id="searchbarsubmit"type="submit" value="Submit" onclick="return search_onclick();">
+		</center>
+	</div>
+	<div id="header">
+		<div> <!--Search bar-->
+			<ul id="navigation">
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="bikes.html">Bikes</a>
+				</li>
+				<li>
+					<a href="accessories.html">Accessories</a>
+				</li>
+				<li>
+					<a href="bikeparts.html">Bike Parts</a>
+				</li>
+				<li>
+					<a href="protection.html">Protection</a>
+				</li>
+				<li>
+					<a href="cameraandvideo.html">Camera and Video</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="contents">
+		<h1>Shopping Cart</h1>
+		<!--Shopping Cart table-->
+		<div id="ordertable">
+			<table id="sctable">
+				<!--Shopping Cart table headers-->
+				<tr>
+					<th id="ostablepn"><font size=2>Product Name</font></th>
+					<th id="ostableprodn"><font size=2>Product Number</font></th>
+					<th id="ostablepn"><font size=2>Price</font></th>
+					<th id="ostablequant"><font size=2>Quantity</font></th>
+					<th id="ostablequant"></th>
+				</tr>
+				<!--Shopping Cart table data - Row One-->
+				<tr>
+					<td><font size=2>GT Garothic 3028</font></td>
+					<td><font size=2>#38347</font></td>
+					<td><font size=2>$600</font></td>
+					<td><center><input type="text" value="1" id="osquantity"></center></td>
+					<td><center><font size=2><a href="shoppingcart.html" id="linkunhighlight">Delete</a></font></center></td>
+				</tr>
+				
+				<!--Row Two-->
+				<tr>
+					<td><font size=2>Brake Pads</font></td>
+					<td><font size=2>#39017</font></td>
+					<td><font size=2>$30</font></td>
+					<td><center><input type="text" value="2" id="osquantity"></center></td>
+					<td><center><font size=2><a href="shoppingcart.html" id="linkunhighlight">Delete</a></font></center></td>
+				</tr>
+				
+				<!--Row Three-->
+				<tr>
+					<td><font size=2>White/Silver Helmet</font></td>
+					<td><font size=2>#56716</font></td>
+					<td><font size=2>$40</font></td>
+					<td><center><input type="text" value="1" id="osquantity"></center></td>
+					<td><center><font size=2><a href="shoppingcart.html" id="linkunhighlight">Delete</a></font></center></td>
+				</tr>
+				
+				<!--Row Four-->
+				<tr>
+					<td><font size=2>Black Helmet</font></td>
+					<td><font size=2>#20123</font></td>
+					<td><font size=2>$45</font></td>
+					<td><center><input type="text" value="2" id="osquantity"></center></td>
+					<td><center><font size=2><a href="shoppingcart.html" id="linkunhighlight">Delete</a></font></center></td>
+				</tr>
+				
+				<!--Row Five-->
+				<tr>
+					<td></td>
+					<td></td>
+					<td>Total: $3565</td>
+					<td>
+						<center>
+							<input type="submit" value="Check Out" onclick="return checkout_onclick();" id="stepthreebuttonsize">
+						</center>
+					</td>
+				</tr>
+			</table>
+		</div>
+		
+		<!--Menu-->
+		<div id="accountmenu">
+			<table id="accounttablewidth">
+				<!--Customer Menu-->
+				<tr><th><font size=2>Customer Menu</font></th></tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="myaccount.html" class="unhighlightmenuoption"><font size=2>Account Home</font></a>
+					</td>
+				</tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="shoppingcart.html" class="highlightmenuoption"><font size=2>My Cart</font></a>
+					</td>
+				</tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="trackorders.html" class="unhighlightmenuoption"><font size=2>Track Orders</font></a>
+					</td>
+				</tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="accountsettings.html" class="unhighlightmenuoption"><font size=2>Account Settings</font></a>
+					</td>
+				</tr>
+				
+				<!--Employee Menu-->
+				<tr><th><font size=2>Employee Menu</font></th></tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="editprice.html" class="unhighlightmenuoption"><font size=2>Edit Prices</font></a>
+					</td>
+				</tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="orderstock.html" class="unhighlightmenuoption"><font size=2>Order Stock</font></a>
+					</td>
+				</tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="onlinesupport.html" class="unhighlightmenuoption"><font size=2>Customer Support</font></a>
+					</td>
+				</tr>
+				
+				<!--Manager Menu-->
+				<tr><th><font size=2>Manager Menu</font></th></tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="addproduct.html" class="unhighlightmenuoption"><font size=2>Add Product</font></a>
+					</td>
+				</tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="removeproduct.html" class="unhighlightmenuoption"><font size=2>Remove Product</font></a>
+					</td>
+				</tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="manageemployees.html" class="unhighlightmenuoption"><font size=2>Manage Employees</font></a>
+					</td>
+				</tr>
+				
+				<!--Business Menu-->
+				<tr><th><font size=2>Business Menu</font></th></tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="orderstock2.html" class="unhighlightmenuoption"><font size=2>Order Stock</font></a>
+					</td>
+				</tr>
+				<tr><td id="myaccountbox"></td></tr>
+			</table>
+		</div>
+	</div>
+	<br><br><br>
+	<div id="footer">
+		<div class="block">
+			<p>
+				Copyright 2014 GreenB
+			</p>
+		</div>
+	</div>
+	</div>
+</body>
+
+<!-- Scripts -->
+<script language="javascript" type="text/javascript">
+	function search_onclick(){
+		window.location.href = "searchresults.html";
+	}
+	
+	function checkout_onclick(){
+		window.location.href = "checkoutcredit.html";
+	}
+</script>
+</html>

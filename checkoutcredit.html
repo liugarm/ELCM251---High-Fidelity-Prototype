@@ -1,0 +1,281 @@
+<!DOCTYPE HTML>
+<!-- website template -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Check Out</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<div id="centerpage">
+	<div id="headeroptions">
+		<ul id="headernavigation">
+			<li><a href="signin.html">Sign in</a></li> or 
+			<li><a href="register.html">Register</a></li> |
+			<li><a href="about.html">About</a></li> |
+			<li><a href="customerservice.html">Support</a></li> |
+			<li class="active"><a href="myaccount.html">My Account</a></li> |
+			<li><a href="questionnaire.html">Questionnaire</a></li>
+		</ul>
+	</div>
+	<div id="cart">
+			<a href="shoppingcart.html"><img src="images/cart.png" id="cartimage" alt="Shopping cart"></a>
+	</div>
+	<div id="logo">
+		<center>
+			<img src="images/logo.png" id="logoimage">
+		</center>
+	</div>
+	<div id="headersearch">
+		<center>
+		<input id="searchbar" type="text" name="searchtext" onfocus="this.value=''" value=" Search...">
+		<input id="searchbarsubmit"type="submit" value="Submit" onclick="return search_onclick();">
+		</center>
+	</div>
+	<div id="header">
+		<div> <!--Search bar-->
+			<ul id="navigation">
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="bikes.html">Bikes</a>
+				</li>
+				<li>
+					<a href="accessories.html">Accessories</a>
+				</li>
+				<li>
+					<a href="bikeparts.html">Bike Parts</a>
+				</li>
+				<li>
+					<a href="protection.html">Protection</a>
+				</li>
+				<li>
+					<a href="cameraandvideo.html">Camera and Video</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="contents">
+		<h1>Check Out</h1>
+		<img src="images/1.png" alt="Step 1">
+		
+		<!----------- 1. Shipping ----------------------->
+		<div id="steponecheckout">
+			<!--1. Shipping Table-->
+			<br>
+			<table class="displaypic">
+				<tr>
+					<td><font size=2><b>Name:</b></font></td>
+					<td><font size=2>John Smith</font></td>
+				</tr>
+				<tr>
+					<td><font size=2><b>Street:</b></font></td>
+					<td><font size=2>91 Graville Rd</font></td>
+				</tr>
+				<tr>
+					<td><font size=2><b>City:</b></font></td>
+					<td><font size=2>Aucklandle</font></td>
+				</tr>
+				<tr>
+					<td><font size=2><b>Country:</b></font></td>
+					<td><font size=2>New Zealand</font></td>
+				</tr>
+				<tr>
+					<td><font size=2><b>Postal Code:</b></font></td>
+					<td><font size=2>2932</font></td>
+				</tr>
+				<tr>
+					<td><font size=2><b>Phone:</b></font></td>
+					<td><font size=2>020 2837203</font></td>
+				</tr>
+			</table>
+			<br><br>
+			<!--1. Edit button-->
+			<div class="comment" id="steponecheckouteditbuttondiv"><br>
+				<input type="submit" value="Edit" id="steponecheckouteditbutton" height:35px;" onclick="return shippingedit_onclick();">
+			</div>
+		</div>
+		
+		<!------------- 2. Payment ------------------------->
+		<br><br>
+		<img src="images/2.png" alt="Step 2">
+		<div id="steptwocheckoutcredit">
+			<center>
+				<a href="checkoutcredit.html" id="linkunhighlight"><font size=2>Credit Card</font></a>
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="checkoutpaypal.html" id="linkunhighlight"><font size=2>Paypal</font></a>
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="checkoutbank.html" id="linkunhighlight"><font size=2>Bank Transfer</font></a>
+			</center>
+			<br>
+			<table>
+				<!--Payment type-->
+				<tr>
+					<td><font size=2>Card Type:&nbsp </font></td>
+					<td>
+						<select>
+							<option>Visa</option>
+							<option>Master Card</option>
+							<option>American Express</option>
+						</select>
+					</td>
+				</tr>
+				
+				<!--Credit card number-->
+				<tr>
+					<td><font size=2>Card Number:&nbsp </font></td>
+					<td>
+						<input type="text"id="steptwoinputwidthcredit">
+					</td>
+				</tr>
+				
+				<!--Expiry Date-->
+				<tr>
+					<td><font size=2>Expiry Date:&nbsp </font></td>
+					<td>
+						<!--Expiry Month Dropdown-->
+						<select>
+							<option selected="selected">Month</option>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+							<option>6</option>
+							<option>7</option>
+							<option>8</option>
+							<option>9</option>
+							<option>10</option>
+							<option>11</option>
+							<option>12</option>
+						</select>
+						
+						<!--Expiry Day Dropdown-->
+						<select>
+							<option selected="selected">Year</option>
+							<option>2014</option>
+							<option>2015</option>
+							<option>2016</option>
+							<option>2017</option>
+							<option>2018</option>
+							<option>2019</option>
+							<option>2020</option>
+							<option>2021</option>
+							<option>2022</option>
+							<option>2023</option>
+						</select>
+					</td>
+				</tr>
+				<!--Security Code-->
+				<tr>
+					<td><font size=2>Security Code:</font></td>
+					<td><input type="text" id="steptwosecuritycodecredit"></td>
+				</tr>
+			</table>
+			<font size=2>Have an account? <a href="signin.html">Login</a> to skip this step</font>
+		</div>
+		
+		<div id="accountmenu">
+			<table id="accounttablewidth">
+				<tr><th><font size=2>Customer Menu</font></th></tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="myaccount.html" class="unhighlightmenuoption"><font size=2>Account Home</font></a>
+					</td>
+				</tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="shoppingcart.html" class="unhighlightmenuoption"><font size=2>My Cart</font></a>
+					</td>
+				</tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="trackorders.html" class="unhighlightmenuoption"><font size=2>Track Orders</font></a>
+					</td>
+				</tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="accountsettings.html" class="unhighlightmenuoption"><font size=2>Account Settings</font></a>
+					</td>
+				</tr>
+									
+				<!--Employee Menu-->
+				<tr><th><font size=2>Employee Menu</font></th></tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="editprice.html" class="unhighlightmenuoption"><font size=2>Edit Prices</font></a>
+					</td>
+				</tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="orderstock.html" class="unhighlightmenuoption"><font size=2>Order Stock</font></a>
+					</td>
+				</tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="onlinesupport.html" class="unhighlightmenuoption"><font size=2>Customer Support</font></a>
+					</td>
+				</tr>
+				
+				<!--Manager Menu-->
+				<tr><th><font size=2>Manager Menu</font></th></tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="addproduct.html" class="unhighlightmenuoption"><font size=2>Add Product</font></a>
+					</td>
+				</tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="removeproduct.html" class="unhighlightmenuoption"><font size=2>Remove Product</font></a>
+					</td>
+				</tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="manageemployees.html" class="unhighlightmenuoption"><font size=2>Manage Employees</font></a>
+					</td>
+				</tr>
+				
+				<!--Business Menu-->
+				<tr><th><font size=2>Business Menu</font></th></tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="orderstock2.html" class="unhighlightmenuoption"><font size=2>Order Stock</font></a>
+					</td>
+				</tr>
+				<tr><td id="checkoutcreditbox"></td></tr>
+			</table>
+		</div>
+		
+		<!------------- 3. Confirm ------------------------->
+		<br><br>
+		<img src="images/3.png" alt="Step 3">
+		<br>
+		<font size=2>When you're ready, press 'Next' to confirm your information.</font>
+		<br><br>&nbsp&nbsp&nbsp
+		<input type="submit" value="Next" id="stepthreebuttonsize" onclick="return confirm_onclick();">
+	</div>
+	
+	<div id="footer">
+		<div class="block">
+			<p>
+				Copyright 2014 GreenB
+			</p>
+		</div>
+	</div>
+	</div>
+</body>
+
+<!-- Scripts -->
+<script language="javascript" type="text/javascript">
+	function search_onclick(){
+		window.location.href = "searchresults.html";
+	}
+	
+	function shippingedit_onclick(){
+		window.location.href = "accountsettings.html";
+	}
+	
+	function confirm_onclick(){
+		window.location.href = "confirm.html";
+	}
+</script>
+</html>

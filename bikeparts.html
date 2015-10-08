@@ -1,0 +1,245 @@
+<!DOCTYPE HTML>
+<!-- website template -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Bike Parts</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<div id="centerpage">
+	<div id="headeroptions">
+		<ul id="headernavigation">
+			<li><a href="signin.html">Sign in</a></li> or 
+			<li><a href="register.html">Register</a></li> |
+			<li><a href="about.html">About</a></li> |
+			<li><a href="customerservice.html">Support</a></li> |
+			<li><a href="myaccount.html">My Account</a></li> |
+			<li><a href="questionnaire.html">Questionnaire</a></li>
+		</ul>
+	</div>
+	<div id="cart">
+			<a href="shoppingcart.html"><img id="cartimage" src="images/cart.png" alt="Shopping cart"></a>
+	</div>
+	<div id="logo">
+		<center>
+			<img id="logoimage" src="images/logo.png" alt="GreenB logo">
+		</center>
+	</div>
+	<div id="headersearch">
+		<center>
+		<input id="searchbar" type="text" name="searchtext" onfocus="this.value=''" value=" Search...">
+		<input id="searchbarsubmit" type="submit" value="Submit" onclick="return search_onclick();">
+		</center>
+	</div>
+	<div id="header">
+		<div> <!--Search bar-->
+			<ul id="navigation">
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="bikes.html">Bikes</a>
+				</li>
+				<li>
+					<a href="accessories.html">Accessories</a>
+				</li>
+				<li class="active">
+					<a href="bikeparts.html">Bike Parts</a>
+				</li>
+				<li>
+					<a href="protection.html">Protection</a>
+				</li>
+				<li>
+					<a href="cameraandvideo.html">Camera and Video</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="contents">
+		<h1>Bike Parts</h1>
+		<!--Filter Options-->
+		<center>
+			<div class="filterbox">
+			
+				<font size=2>FILTER BY:</font>
+				
+				<select class="productfilterone">
+					<option><-- No Filters --></option>
+				</select>&nbsp&nbsp&nbsp&nbsp
+				
+				<font size=2>SHOW:</font>
+				<select class="productfilterone">
+					<option>10</option>
+					<option>15</option>
+					<option>20</option>
+					<option>25</option>
+				</select>&nbsp&nbsp&nbsp&nbsp
+				
+				<font size=2>SORT BY:</font>
+				<select class="productfiltertwo">
+					<option>Default</option>
+					<option>Name (A-Z)</option>
+					<option>Name (Z-A)</option>
+					<option>Price (Low>High)</option>
+					<option>Price (High>Low)</option>
+					<option>Model (A-Z)</option>
+					<option>Model (Z-A)</option>
+				</select>
+				
+			</div>
+		</center><br>
+		<!--------------------------------------------------->
+		<!---------------------Row 1------------------------->
+		<!--------------------------------------------------->
+		<table>
+			<tr>
+				<!--Product 1-->
+				<td>
+					<div class="productbox">
+						<center>
+							<div class="productimage">
+								<a href="product.html"><img id="displaypic" src="images/bpbrakepads.jpg" class="pimage" alt="Brake Pads"></a>
+							</div>
+							
+							<h4><a href="product.html">Brake Pads<a><br>$30</h4>
+							<input type="submit" value="Add to cart" class="productsubmitbutton" onclick="return cart();">
+						</center>
+					</div>
+				</td>
+				
+				<!--Product 2-->
+				<td>
+					<div class="productbox" >
+						<center>
+							<div class="productimage">
+								<a href="product.html"><img id="displaypic" src="images/bpchain.jpg" class="pimage" alt="Bike Chain"></a>
+							</div>
+							
+							<h4><a href="product.html">Bike Chain<a><br>$25</h4>
+							<input type="submit" value="Add to cart" class="productsubmitbutton" onclick="return cart();">
+						</center>
+					</div>
+				</td>
+				
+				<!--Product 3-->
+				<td>
+					<div class="productbox" >
+						<center>
+							<div class="productimage">
+								<a href="product.html"><img id="displaypic" src="images/bppedals.jpg" class="pimage" alt="Bike Pedals"></a>
+							</div>
+							
+							<h4><a href="product.html">Bike Pedals<a><br>$70</h4>
+							<input type="submit" value="Add to cart" class="productsubmitbutton" onclick="return cart();">
+						</center>
+					</div>
+				</td>
+				
+				<!--Product 4-->
+				<td>
+					<div class="productbox" >
+						<center>
+							<div class="productimage">
+								<a href="product.html"><img id="displaypic" src="images/bptyre.jpg" class="pimage" alt="Bike Tyres"></a>
+							</div>
+							
+							<h4><a href="product.html">Bike Tyres<a><br>$50</h4>
+							<input type="submit" value="Add to cart" class="productsubmitbutton" onclick="return cart();">
+						</center>
+					</div>
+				</td>
+				
+			</tr>
+
+			<!--------------------------------------------------->
+			<!---------------------Row 2------------------------->
+			<!--------------------------------------------------->
+			<tr>
+				<!--Product 5-->
+				<td>
+					<div class="productbox" >
+						<center>
+							<br><br><br>
+							<div class="productimage">
+								<a href="product.html"><img id="displaypic" src="images/bpframe.jpg" class="pimage" alt="Brake Pads"></a>
+							</div>
+							
+							<br>
+							<h4><a href="product.html">Bike Frame<a><br>$80</h4>
+							<input type="submit" value="Add to cart" class="productsubmitbutton" onclick="return cart();">
+						</center>
+					</div>
+				</td>
+				
+				<!--Product 6-->
+				<td>
+					<div class="productbox" >
+						<center>
+							<br><br>
+							<div class="productimage">
+								<a href="product.html"><img id="displaypic" src="images/bpframe2.jpg" class="pimage" alt="Bike Chain"></a>
+							</div>
+							
+							<h4><a href="product.html">Bike Frame<a><br>$85</h4><br>
+							<input type="submit" value="Add to cart" class="productsubmitbutton" onclick="return cart();">
+						</center>
+					</div>
+				</td>
+				
+				<!--Product 7-->
+				<td>
+					<div class="productbox" >
+						<center><br>
+							<div class="productimage">
+								<a href="product.html"><img id="displaypic" src="images/bpframe3.jpg" class="pimage" alt="Bike Pedals"></a>
+							</div>
+							
+							<h4><a href="product.html">Bike Frame<a><br>$78</h4><br>
+							<input type="submit" value="Add to cart" class="productsubmitbutton" onclick="return cart();">
+						</center>
+					</div>
+				</td>
+				
+				<!--Product 8-->
+				<td>
+					<div class="productbox" >
+						<center>
+							<div class="productimage">
+								<a href="product.html"><img id="displaypic" src="images/bptyre2.jpg" class="pimage" alt="Bike Tyres"></a>
+							</div>
+							
+							<h4><a href="product.html">Bike Tyres<a><br>$60</h4>
+							<input type="submit" value="Add to cart" class="productsubmitbutton" onclick="return cart();">
+						</center>
+					</div>
+				</td>
+				
+			</tr>
+		</table>
+
+			
+	</div>
+	<div id="footer">
+		<div class="block">
+			<p>
+				Copyright 2014 GreenB
+			</p>
+		</div>
+	</div>
+	</div>
+</body>
+
+<!-- Scripts -->
+<script language="javascript" type="text/javascript">
+	function search_onclick(){
+		console.log("test");
+		window.location.href = "searchresults.html";
+	}
+	
+	function cart(){
+		console.log("test");
+		window.location.href = "shoppingcart.html";
+	}
+</script>
+</html>

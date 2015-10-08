@@ -1,0 +1,260 @@
+<!DOCTYPE HTML>
+<!-- website template -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Order Stock</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<div id="centerpage">
+	<div id="headeroptions">
+		<ul id="headernavigation">
+			<li><a href="signin.html">Sign in</a></li> or 
+			<li><a href="register.html">Register</a></li> |
+			<li><a href="about.html">About</a></li> |
+			<li><a href="customerservice.html">Support</a></li> |
+			<li class="active"><a href="myaccount.html">My Account</a></li> |
+			<li><a href="questionnaire.html">Questionnaire</a></li>
+		</ul>
+	</div>
+	<div id="cart">
+			<a href="orderstock2.html"><img src="images/cart.png" id="cartimage" alt="Shopping cart"></a>
+	</div>
+	<div id="logo">
+		<center>
+			<img src="images/logo.png" id="logoimage">
+		</center>
+	</div>
+	<div id="headersearch">
+		<center>
+		<input id="searchbar" type="text" name="searchtext" onfocus="this.value=''" value=" Search...">
+		<input id="searchbarsubmit"type="submit" value="Submit" onclick="return search_onclick();">
+		</center>
+	</div>
+	<div id="header">
+		<div> <!--Search bar-->
+			<ul id="navigation">
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="bikes.html">Bikes</a>
+				</li>
+				<li>
+					<a href="accessories.html">Accessories</a>
+				</li>
+				<li>
+					<a href="bikeparts.html">Bike Parts</a>
+				</li>
+				<li>
+					<a href="protection.html">Protection</a>
+				</li>
+				<li>
+					<a href="cameraandvideo.html">Camera and Video</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="contents">
+		<div class="simpletext">
+			<h1>Order Stock from GreenB</h1>
+			
+			<table>
+				<tr>
+					<td><font size=2>Product:</font></td>
+					<td>
+						<select>
+							<option>GT Garothic 3028</option>
+							<option>SL Questic 2027</option>
+							<option>SP Fezzarri 3432</option>
+							<option>AL Raadi 4574</option>
+							<option>Black/Silver In-Ear Headphones</option>
+							<option>Leather Grips</option>
+							<option>Backpack</option>
+							<option>Combination Lock</option>
+							<option>Brake Pads</option>
+							<option>Bike Chain</option>
+							<option>Bike Pedals</option>
+							<option>Bike Tyres</option>
+							<option>White/Silver Helmet</option>
+							<option>Black/White Helmet</option>
+							<option>Black Helmet</option>
+							<option>Black Gloves</option>
+							<option>Elite Camera</option>
+							<option>Helmet Front Mount</option>
+							<option>Frame Mount</option>
+							<option>Handlebar Seatpost Mount</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td><font size=2>Quantity:</font></td>
+					<td><input type="text" id="osquantity"></td>
+				</tr>
+			</table>
+			
+			<br>
+			<div id="ossubmitdiv">
+				<p align="right"><input type="submit" value="Add" id="ossubmit" onclick="return add();"></p>
+			</div>
+			<br><br>
+			Location: <input type="text">
+			Date: <input type="text">
+			<br><br>
+			<table id="ostablewidth">
+				<!--Order Stock table headers-->
+				<tr>
+					<th id="ostablepn"><font size=2>Product Name</font></th>
+					<th id="ostableprodn"><font size=2>Product Number</font></th>
+					<th id="ostablepn"><font size=2>Price</font></th>
+					<th id="ostablequant"><font size=2>Quantity</font></th>
+					<th id="ostablequant"></th>
+				</tr>
+				<!--Order Stock table data - Row One-->
+				<tr>
+					<td><font size=2>GT Garothic 3028</font></td>
+					<td><font size=2>#38347</font></td>
+					<td><font size=2>$600</font></td>
+					<td><center><input type="text" value="250" id="osquantity"></center></td>
+					<td><center><font size=2><a href="orderstock2.html" id="linkunhighlight">Delete</a></font></center></td>
+				</tr>
+				<!--Row Two-->
+				<tr>
+					<td><font size=2>Brake Pads</font></td>
+					<td><font size=2>#39017</font></td>
+					<td><font size=2>$30</font></td>
+					<td><center><input type="text" value="20" id="osquantity"></center></td>
+					<td><center><font size=2><a href="orderstock2.html" id="linkunhighlight">Delete</a></font></center></td>
+				</tr>
+				
+				<!--Row Three-->
+				<tr>
+					<td><font size=2>White/Silver Helmet</font></td>
+					<td><font size=2>#56716</font></td>
+					<td><font size=2>$40</font></td>
+					<td><center><input type="text" value="100" id="osquantity"></center></td>
+					<td><center><font size=2><a href="orderstock2.html" id="linkunhighlight">Delete</a></font></center></td>
+				</tr>
+				
+				<!--Row Four-->
+				<tr>
+					<td><font size=2>Black Helmet</font></td>
+					<td><font size=2>#20123</font></td>
+					<td><font size=2>$45</font></td>
+					<td><center><input type="text" value="50" id="osquantity"></center></td>
+					<td><center><font size=2><a href="orderstock2.html" id="linkunhighlight">Delete</a></font></center></td>
+				</tr>
+				
+				<!--Row Five-->
+				<tr>
+					<td></td>
+					<td></td>
+					<td>Total: $156,850</td>
+					<td>
+						<center>
+							<input type="submit" value="Check Out" onclick="return checkout_onclick();" id="addproductsubmitbuttonsize">
+						</center>
+					</td>
+				</tr>
+			</table>
+		</div>
+		
+		<div id="accountmenu">
+			<table id="accounttablewidth">
+				<!--Customer Menu-->
+				<tr><th><font size=2>Customer Menu</font></th></tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="myaccount.html" class="unhighlightmenuoption"><font size=2>Account Home</font></a>
+					</td>
+				</tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="orderstock2.html" class="unhighlightmenuoption"><font size=2>My Cart</font></a>
+					</td>
+				</tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="trackorders.html" class="unhighlightmenuoption"><font size=2>Track Orders</font></a>
+					</td>
+				</tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="accountsettings.html" class="unhighlightmenuoption"><font size=2>Account Settings</font></a>
+					</td>
+				</tr>
+				
+				<!--Employee Menu-->
+				<tr><th><font size=2>Employee Menu</font></th></tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="editprice.html" class="unhighlightmenuoption"><font size=2>Edit Prices</font></a>
+					</td>
+				</tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="orderstock.html" class="unhighlightmenuoption"><font size=2>Order Stock</font></a>
+					</td>
+				</tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="onlinesupport.html" class="unhighlightmenuoption"><font size=2>Customer Support</font></a>
+					</td>
+				</tr>
+				
+				<!--Manager Menu-->
+				<tr><th><font size=2>Manager Menu</font></th></tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="addproduct.html" class="unhighlightmenuoption"><font size=2>Add Product</font></a>
+					</td>
+				</tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="removeproduct.html" class="unhighlightmenuoption"><font size=2>Remove Product</font></a>
+					</td>
+				</tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="manageemployees.html" class="unhighlightmenuoption"><font size=2>Manage Employees</font></a>
+					</td>
+				</tr>
+				<!--Business Menu-->
+				<tr><th><font size=2>Business Menu</font></th></tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="orderstock2.html" class="highlightmenuoption"><font size=2>Order Stock</font></a>
+					</td>
+				</tr>
+				<tr><td id="myaccountbox"></td></tr>
+			</table>
+		</div>
+	</div>
+	<br><br><br>
+	<div id="footer">
+		<div class="block">
+			<p>
+				Copyright 2014 GreenB
+			</p>
+		</div>
+	</div>
+	</div>
+</body>
+
+<!-- Scripts -->
+<script language="javascript" type="text/javascript">
+	function search_onclick(){
+		console.log("test");
+		window.location.href = "searchresults.html";
+	}
+	
+	function checkout_onclick(){
+		window.location.href = "confirmmessage.html";
+	}
+	
+	function add(){
+		alert("Item added");
+	}
+</script>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE HTML>
+<!-- website template -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Account Settings</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<div id="centerpage">
+	<div id="headeroptions">
+		<ul id="headernavigation">
+			<li><a href="signin.html">Sign in</a></li> or 
+			<li><a href="register.html">Register</a></li> |
+			<li><a href="about.html">About</a></li> |
+			<li><a href="customerservice.html">Support</a></li> |
+			<li class="active"><a href="myaccount.html">My Account</a></li> |
+			<li><a href="questionnaire.html">Questionnaire</a></li>
+		</ul>
+	</div>
+	<div id="cart">
+			<a href="shoppingcart.html"><img src="images/cart.png" id="cartimage" alt="Shopping cart"></a>
+	</div>
+	<div id="logo">
+		<center>
+			<img src="images/logo.png" id="logoimage">
+		</center>
+	</div>
+	<div id="headersearch">
+		<center>
+		<input id="searchbar" type="text" name="searchtext" onfocus="this.value=''" value=" Search...">
+		<input id="searchbarsubmit"type="submit" value="Submit" onclick="return search_onclick();">
+		</center>
+	</div>
+	<div id="header">
+		<div> <!--Search bar-->
+			<ul id="navigation">
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="bikes.html">Bikes</a>
+				</li>
+				<li>
+					<a href="accessories.html">Accessories</a>
+				</li>
+				<li>
+					<a href="bikeparts.html">Bike Parts</a>
+				</li>
+				<li>
+					<a href="protection.html">Protection</a>
+				</li>
+				<li>
+					<a href="cameraandvideo.html">Camera and Video</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="contents">
+		<div class="simpletext">
+			<h1>Account Settings</h1>
+			<p>This is where you can edit your account information. If you would like to update any personal details, type in the given boxes, and hit 'Ok'</p>
+			<!--Personal info-->
+			<table class="displaypic">
+				<tr>
+					<th>Personal Information</th>
+				</tr>
+				<tr>
+					<td><b><font size=2>Name:</font></b></td>
+					<td><font size=2>John Smith</font></td>
+					<td><input type="text" class="textentrywidth"></td>
+				</tr>
+				<tr>
+					<td><b><font size=2>Street:</font></b></td>
+					<td><font size=2>91 Graville Rd</font></td>
+					<td><input type="text" class="textentrywidth"></td>
+				</tr>
+				<tr>
+					<td><b><font size=2>City:</font></b></td>
+					<td><font size=2>Aucklandle</font></td>
+					<td><input type="text" class="textentrywidth"></td>
+				</tr>
+				<tr>
+					<td><b><font size=2>Country:</font></b></td>
+					<td><font size=2>New Zealand</font></td>
+					<td><input type="text" class="textentrywidth"></td>
+				</tr>
+				<tr>
+					<td><b><font size=2>Postal Code:</font></b></td>
+					<td><font size=2>2932</font></td>
+					<td><input type="text" class="textentrywidth"></td>
+				</tr>
+				<tr>
+					<td><b><font size=2>Phone Number:</font></b></td>
+					<td><font size=2>020 2837203</font></td>
+					<td><input type="text" class="textentrywidth"></td>
+				</tr>
+				<tr>
+					<td><b><font size=2>Email Address:</font></b></td>
+					<td><font size=2>johnsmith@email.com</font></td>
+					<td><input type="text" class="textentrywidth"></td>
+				</tr>
+				<tr>
+					<td><b><font size=2>Password:</font></b></td>
+					<td><font size=2><a href="accountsettings.html">Change password</a></font></td>
+				</tr>
+			</table>
+			
+			<!--Payment info-->
+			<table class="comment">
+				<th>Payment Information</th>
+				<!-----------Credit Card----------------------------------->
+				<tr>
+					<td><font size=2><b><center>• Credit Card</center></b></font></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><b><font size=2>Card Type:</font></b></td>
+					<td><font size=2>Visa</font></td>
+				</tr>
+				<tr>
+					<td><b><font size=2>Card Number:</font></b></td>
+					<td><font size=2>**********5</font></td>
+				</tr>
+				<tr>
+					<td><b><font size=2>Expiry Date:</font></b></td>
+					<td><font size=2>05/2014</font></td>
+				</tr>
+				<tr>
+					<td><b><font size=2>Security Code:</font></b></td>
+					<td><font size=2>***2</font></td>
+				</tr>
+				<!-----------Paypal----------------------------------------->
+				<tr>
+					<td><font size=2><b><center>• Paypal</center></b></font></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><b><font size=2>Email Address:</font></b></td>
+					<td><font size=2>johnsmith@email.com</font></td>
+				</tr>
+				<!-----------Bank Transfer---------------------------------->
+				<tr>
+					<td><font size=2><b><center>• Bank</center></b></font></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><b><font size=2>Bank Name:</font></b></td>
+					<td><font size=2>Trusty Bank</font></td>
+				</tr>
+				<tr>
+					<td><b><font size=2>Account Number:</font></b></td>
+					<td><font size=2>00*****************</font></td>
+				</tr>
+				<tr>
+					<td><a href="accountsettings.html"><font size=2>Edit Payment Details</font></a></td>
+				</tr>
+			</table>
+		</div>
+		
+		<div id="accountmenu">
+			<table id="accounttablewidth">
+				<tr><th><font size=2>Customer Menu</font></th></tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="myaccount.html" class="unhighlightmenuoption"><font size=2>Account Home</font></a>
+					</td>
+				</tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="shoppingcart.html" class="unhighlightmenuoption"><font size=2>My Cart</font></a>
+					</td>
+				</tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="trackorders.html" class="unhighlightmenuoption"><font size=2>Track Orders</font></a>
+					</td>
+				</tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="accountsettings.html" class="highlightmenuoption"><font size=2>Account Settings</font></a>
+					</td>
+				</tr>
+					
+				<!--Employee Menu-->
+				<tr><th><font size=2>Employee Menu</font></th></tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="editprice.html" class="unhighlightmenuoption"><font size=2>Edit Prices</font></a>
+					</td>
+				</tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="orderstock.html" class="unhighlightmenuoption"><font size=2>Order Stock</font></a>
+					</td>
+				</tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="onlinesupport.html" class="unhighlightmenuoption"><font size=2>Customer Support</font></a>
+					</td>
+				</tr>
+				
+				<!--Manager Menu-->
+				<tr><th><font size=2>Manager Menu</font></th></tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="addproduct.html" class="unhighlightmenuoption"><font size=2>Add Product</font></a>
+					</td>
+				</tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="removeproduct.html" class="unhighlightmenuoption"><font size=2>Remove Product</font></a>
+					</td>
+				</tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="manageemployees.html" class="unhighlightmenuoption"><font size=2>Manage Employees</font></a>
+					</td>
+				</tr>
+				<!--Business Menu-->
+				<tr><th><font size=2>Business Menu</font></th></tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="orderstock2.html" class="unhighlightmenuoption"><font size=2>Order Stock</font></a>
+					</td>
+				</tr>
+				<tr><td id="myaccountbox"></td></tr>
+			</table>
+		</div>
+		
+		<center><input type="submit" value="Ok" onclick="return home_onclick();"></center>
+	</div>
+	<br>
+	<div id="footer">
+		<div class="block">
+			<p>
+				Copyright 2014 GreenB
+			</p>
+		</div>
+	</div>
+	</div>
+</body>
+
+<!-- Scripts -->
+<script language="javascript" type="text/javascript">
+	function search_onclick(){
+		console.log("test");
+		window.location.href = "searchresults.html";
+	}
+	
+	function home_onclick(){
+		window.location.href = "index.html"
+	}
+</script>
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE HTML>
+<!-- website template -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Manage Employees</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<div id="centerpage">
+	<div id="headeroptions">
+		<ul id="headernavigation">
+			<li><a href="signin.html">Sign in</a></li> or 
+			<li><a href="register.html">Register</a></li> |
+			<li><a href="about.html">About</a></li> |
+			<li><a href="customerservice.html">Support</a></li> |
+			<li class="active"><a href="myaccount.html">My Account</a></li> |
+			<li><a href="questionnaire.html">Questionnaire</a></li>
+		</ul>
+	</div>
+	<div id="cart">
+			<a href="shoppingcart.html"><img src="images/cart.png" id="cartimage" alt="Shopping cart"></a>
+	</div>
+	<div id="logo">
+		<center>
+			<img src="images/logo.png" id="logoimage">
+		</center>
+	</div>
+	<div id="headersearch">
+		<center>
+		<input id="searchbar" type="text" name="searchtext" onfocus="this.value=''" value=" Search...">
+		<input id="searchbarsubmit"type="submit" value="Submit" onclick="return search_onclick();">
+		</center>
+	</div>
+	<div id="header">
+		<div> <!--Search bar-->
+			<ul id="navigation">
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="bikes.html">Bikes</a>
+				</li>
+				<li>
+					<a href="accessories.html">Accessories</a>
+				</li>
+				<li>
+					<a href="bikeparts.html">Bike Parts</a>
+				</li>
+				<li>
+					<a href="protection.html">Protection</a>
+				</li>
+				<li>
+					<a href="cameraandvideo.html">Camera and Video</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="contents">
+		<div class="simpletext">
+			<h1>Manage Employees</h1>
+		</div>
+		
+		<table id="metablewidth">
+			<tr>
+				<th><font size=2>ID</font></th>
+				<th><font size=2>Title</font></th>
+				<th><font size=2>First name</font></th>
+				<th><font size=2>Last name</font></th>
+				<th><font size=2>DOB</font></th>
+				<th><font size=2>Hire date</font></th>
+				<th><font size=2>Years</font></th>
+				<th><font size=2>Area Code</font></th>
+				<th><font size=2>Phone</font></th>
+			</tr>
+			<tr>
+				<td><font size=2>192</font></td>
+				<td><font size=2>Mr.</font></td>
+				<td><font size=2>Andy</font></td>
+				<td><font size=2>Smith</font></td>
+				<td><font size=2>12/01/1987</font></td>
+				<td><font size=2>15/08/2010</font></td>
+				<td><font size=2>4</font></td>
+				<td><font size=2>2028</font></td>
+				<td><font size=2>020 2937292</font></td>
+				<td id="mecolumnwidth"><input type="submit" value="Remove Employee" id="meremovebutton" onclick="return removeemployee();"></td>
+			</tr>
+			<tr>
+				<td><font size=2>122</font></td>
+				<td><font size=2>Mrs.</font></td>
+				<td><font size=2>Lucy</font></td>
+				<td><font size=2>Jackson</font></td>
+				<td><font size=2>12/06/1990</font></td>
+				<td><font size=2>15/08/2011</font></td>
+				<td><font size=2>3</font></td>
+				<td><font size=2>2234</font></td>
+				<td><font size=2>020 3237292</font></td>
+				<td id="mecolumnwidth"><input type="submit" value="Remove Employee" id="meremovebutton" onclick="return removeemployee();"></td>
+			</tr>
+			<tr>
+				<td><font size=2>127</font></td>
+				<td><font size=2>Mrs.</font></td>
+				<td><font size=2>Amber</font></td>
+				<td><font size=2>Black</font></td>
+				<td><font size=2>11/02/1991</font></td>
+				<td><font size=2>15/02/2011</font></td>
+				<td><font size=2>3</font></td>
+				<td><font size=2>2234</font></td>
+				<td><font size=2>020 3223292</font></td>
+				<td id="mecolumnwidth"><input type="submit" value="Remove Employee" id="meremovebutton" onclick="return removeemployee();"></td>
+			</tr>
+			<tr>
+				<td><font size=2>198</font></td>
+				<td><font size=2>Mr.</font></td>
+				<td><font size=2>Bill</font></td>
+				<td><font size=2>Lavel</font></td>
+				<td><font size=2>30/06/1985</font></td>
+				<td><font size=2>15/08/2011</font></td>
+				<td><font size=2>3</font></td>
+				<td><font size=2>2918</font></td>
+				<td><font size=2>020 0987292</font></td>
+				<td id="mecolumnwidth"><input type="submit" value="Remove Employee" id="meremovebutton" onclick="return removeemployee();"></td>
+			</tr>
+			<tr>
+				<td><font size=2>851</font></td>
+				<td><font size=2>Mrs.</font></td>
+				<td><font size=2>Sarah</font></td>
+				<td><font size=2>Hill</font></td>
+				<td><font size=2>29/01/1992</font></td>
+				<td><font size=2>15/02/2009</font></td>
+				<td><font size=2>5</font></td>
+				<td><font size=2>2826</font></td>
+				<td><font size=2>020 3237182</font></td>
+				<td id="mecolumnwidth"><input type="submit" value="Remove Employee" id="meremovebutton" onclick="return removeemployee();"></td>
+			</tr>
+		</table>
+		
+		<br><br>
+		<h1>Add Employee</h1>
+		<table>
+			<tr>
+				<td><font size=2><b>ID: </b></font></td>
+				<td><input type="text" id="meaddbutton"></td>
+			</tr>
+			<tr>
+				<td><font size=2><b>Title: </b></font></td>
+				<td><input type="text" id="meaddbutton""></td>
+			</tr>
+			<tr>
+				<td><font size=2><b>First Name: </b></font></td>
+				<td><input type="text" id="meaddbutton""></td>
+			</tr>
+			<tr>
+				<td><font size=2><b>Last Name: </b></font></td>
+				<td><input type="text" id="meaddbutton""></td>
+			</tr>
+			<tr>
+				<td><font size=2><b>Date of Birth: </b></font></td>
+				<td><input type="text" id="meaddbutton""></td>
+			</tr>
+			<tr>
+				<td><font size=2><b>Area Code: </b></font></td>
+				<td><input type="text" id="meaddbutton""></td>
+			</tr>
+			<tr>
+				<td><font size=2><b>Phone: </b></font></td>
+				<td><input type="text" id="meaddbutton""></td>
+			</tr>	
+			<tr>
+				<td></td>
+				<td><center><input type="submit" value="Add" id="mesubmitbutton" onclick="return addemployee();"></center></td>
+			</tr>
+		</table>
+		
+		<div id="accountmenu">
+			<table id="accounttablewidth">
+				<!--Customer Menu-->
+				<tr><th><font size=2>Customer Menu</font></th></tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="myaccount.html" class="unhighlightmenuoption"><font size=2>Account Home</font></a>
+					</td>
+				</tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="shoppingcart.html" class="unhighlightmenuoption"><font size=2>My Cart</font></a>
+					</td>
+				</tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="trackorders.html" class="unhighlightmenuoption"><font size=2>Track Orders</font></a>
+					</td>
+				</tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="accountsettings.html" class="unhighlightmenuoption"><font size=2>Account Settings</font></a>
+					</td>
+				</tr>
+				
+				<!--Employee Menu-->
+				<tr><th><font size=2>Employee Menu</font></th></tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="editprice.html" class="unhighlightmenuoption"><font size=2>Edit Prices</font></a>
+					</td>
+				</tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="orderstock.html" class="unhighlightmenuoption"><font size=2>Order Stock</font></a>
+					</td>
+				</tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="onlinesupport.html" class="unhighlightmenuoption"><font size=2>Customer Support</font></a>
+					</td>
+				</tr>
+				
+				<!--Manager Menu-->
+				<tr><th><font size=2>Manager Menu</font></th></tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="addproduct.html" class="unhighlightmenuoption"><font size=2>Add Product</font></a>
+					</td>
+				</tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="removeproduct.html" class="unhighlightmenuoption"><font size=2>Remove Product</font></a>
+					</td>
+				</tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="manageemployees.html" class="highlightmenuoption"><font size=2>Manage Employees</font></a>
+					</td>
+				</tr>
+				<!--Business Menu-->
+				<tr><th><font size=2>Business Menu</font></th></tr>
+				<tr>
+					<td class="accounttabledatabg">
+						<a href="orderstock2.html" class="unhighlightmenuoption"><font size=2>Order Stock</font></a>
+					</td>
+				</tr>
+				<tr><td id="mebox"></td></tr>
+			</table>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="block">
+			<p>
+				Copyright 2014 GreenB
+			</p>
+		</div>
+	</div>
+	</div>
+</body>
+
+<!-- Scripts -->
+<script language="javascript" type="text/javascript">
+	function search_onclick(){
+		console.log("test");
+		window.location.href = "searchresults.html";
+	}
+	
+	function addemployee(){
+		alert("New employee successfully added.");
+	}
+	
+	function removeemployee(){
+		alert("Employee successfully removed.");
+	}
+</script>
+</html>

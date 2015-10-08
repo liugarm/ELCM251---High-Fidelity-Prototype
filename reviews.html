@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<!-- website template -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>GT Garothic 3028</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<div id="centerpage">
+	<div id="headeroptions">
+		<ul id="headernavigation">
+			<li><a href="signin.html">Sign in</a></li> or 
+			<li><a href="register.html">Register</a></li> |
+			<li><a href="about.html">About</a></li> |
+			<li><a href="customerservice.html">Support</a></li> |
+			<li><a href="myaccount.html">My Account</a></li> |
+			<li><a href="questionnaire.html">Questionnaire</a></li>
+		</ul>
+	</div>
+	<div id="cart">
+			<a href="shoppingcart.html"><img src="images/cart.png" id="cartimage" alt="Shopping cart"></a>
+	</div>
+	<div id="logo">
+		<center>
+			<img src="images/logo.png" id="logoimage">
+		</center>
+	</div>
+	<div id="headersearch">
+		<center>
+		<input id="searchbar" type="text" name="searchtext" onfocus="this.value=''" value=" Search...">
+		<input id="searchbarsubmit"type="submit" value="Submit" onclick="return search_onclick();">
+		</center>
+	</div>
+	<div id="header">
+		<div> <!--Search bar-->
+			<ul id="navigation">
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="bikes.html">Bikes</a>
+				</li>
+				<li>
+					<a href="accessories.html">Accessories</a>
+				</li>
+				<li>
+					<a href="bikeparts.html">Bike Parts</a>
+				</li>
+				<li>
+					<a href="protection.html">Protection</a>
+				</li>
+				<li>
+					<a href="cameraandvideo.html">Camera and Video</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="contents">
+		<div class="simpletext">
+			<h1>GT Garothic 3028</h1>
+		</div>
+		<!--Product Image Preview-->
+		<div>
+		<img id="productpreview" src="images/bike.jpg" alt="GT Garothic 3028" id="productpreview" alt="Product Preview">
+		</div>
+		
+		<!--Product description-->
+		<div id="productdescription">
+			<font size=2>
+			The GT Garothic 3028 is a dual suspension fun machine, 130/120mm of travel Front/Rear let’s you power fearlessly through harsh sections with absolute confidence.<br><br>
+			The 220mm Tiger CTD rear shock paired with the Tiger 34 Float, 130mm fork provide plush, fully tuneable travel making the GT Garothic 3028 hugely capable and massive fun on descents.<br><br>
+			A great combination of well chosen components including GT Garothic hydraulic disc brakes, Zero seatpost, bar and stem and Sram10 speed groupset make the Coppermine a freerider’s dream bike. a total weapon on the descents and still able to make the climbs.
+			</font>
+			
+			<br><br>
+			<div id="reviews">
+				<h1>Reviews</h1><hr width="176%">
+				
+				<!--Review 1-->
+				<div class="review" id="reviewdiv">
+					<img src="images/profilepic.png" id="reviewdp" alt="User">
+					
+					<div class="comment" id="reviewcomment">
+						I love using this bike! It meets all the specifications I specified when I asked for customer assistance, and haven't had any problems. 
+						<br><br>
+						Will definitely purchase from GreenB next time!!
+					</div>
+					
+					<p align="right"><img src="images/rating5.png" id="reviewrating" alt="Rating of 5"></p>
+				</div>
+				
+				<!--Review 2-->
+				<div class="review" id="reviewdiv">
+					<img src="images/profilepic.png" id="reviewdp" alt="User">
+					
+					<div class="comment" id="reviewcomment">
+						The bike was alright, however I found a problem with the breaks where it would make an odd squeaky noise when pressing on it which got annoying after awhile. 
+						<br><br>
+						However I called GreenB about the problem and they quickly helped me fix the problem.
+					</div>
+					
+					<p align="right"><img src="images/rating3.png" id="reviewrating" alt="Rating of 3"></p>
+				</div>
+				
+				<!--Review 3-->
+				<div class="review" id="reviewdiv">
+					<img src="images/profilepic.png" id="reviewdp" alt="User">
+					
+					<div class="comment" id="reviewcomment">
+						As one of the other reviews mentioned, there was a problem with an odd squeaky noise with the breaks. However, I managed to fix the problem myself. Otherwise, a good bike. 
+					</div>
+					
+					<p align="right"><img src="images/rating3.png" id="reviewrating" alt="Rating of 3"></p>
+				</div>
+				
+				<!--Review 4-->
+				<div class="review" id="reviewdiv">
+					<img src="images/profilepic.png" id="reviewdp" alt="User">
+					
+					<div class="comment" id="reviewcomment">
+						Great bike and for a great price as well! The shipping for a bit slow therefore I decided to give a 4 stars. I understand there was a problem with the website not sending orders properly.
+						<br><br>
+						However it was a great bike overall, would definitely recommend!
+					</div>
+					
+					<p align="right"><img src="images/rating4.png" id="reviewrating" alt="Rating of 4"></p>
+				</div>
+				
+				<div class="review" id="reviewdiv">
+					Write a review:<br>
+					<textarea id="osbottomwindow"></textarea>
+					<br><input type="submit" value="Send" id="ossubmit" onclick="return reviews();">
+				</div>
+			</div>
+			
+			<div id="reviewback">
+				<br><font size=2><p align="right"><a href="product.html">Go back<a></p></font>
+			</div>
+		</div>
+		
+	</div>
+	<div id="footer">
+		<div class="block">
+			<p>
+				Copyright 2014 GreenB
+			</p>
+		</div>
+	</div>
+	</div>
+</body>
+
+<!-- Scripts -->
+<script language="javascript" type="text/javascript">
+	function search_onclick(){
+		window.location.href = "searchresults.html";
+	}
+	
+	function reviews(){
+		alert('Review sent!');
+	}
+</script>
+</html>

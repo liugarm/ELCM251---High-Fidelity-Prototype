@@ -1,0 +1,883 @@
+/** Set the font the site will use **/
+@font-face {
+	font-family: 'OpenSans';
+	src: url('../fonts/OpenSans-Regular.eot');
+	src: local('☺'), url('../fonts/OpenSans-Regular.woff') format('woff'), url('../fonts/OpenSans-Regular.ttf') format('truetype'), url('../fonts/OpenSans-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/** Set the body font to the OpenSans and the background colour **/
+body {
+	background-color: #fff;
+	font-family: 'OpenSans';
+	margin: 0;
+}
+
+/** Clear: both means that there are no elements on the left and right side of contents div
+	content: "" because we want to keep it empty after the content, we don't want to add anything
+	display: block means that everything will be displayed on each line **/
+#contents:after {
+	clear:both;
+	content:"";
+	display:block;
+}
+/*------------------------------ CATEGORY HEADER - e.g. Bikes, Bike Parts etc. ------------------------------*/
+#header {
+	background-color: #DBFF94;
+	border-bottom: 1px solid silver;
+	padding: 20px 0px;
+	width:1349px;
+}
+#header > div {
+	width: 920px;
+	margin: 0 auto;
+	padding: 0;
+}
+/*------------------------------ HEADER SEARCH - Search bar ------------------------------*/
+#headersearch {
+	background-color: #EBFFE0;
+	border-bottom: 1px solid silver;
+	padding: 20px 0px;
+	width:1349px;
+}
+#headersearch > div {
+	width: 920px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+/*------------------------------ HEADER OPTIONS - e.g. Sign in, Register etc. ------------------------------*/
+/**Default bg: #eee**/
+#headeroptions {
+	background-color: #EBFFE0;
+	padding: 20px 0px;
+	width:1349px;
+}
+#headeroptions > div {
+	width: 920px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+/*------------------------------ LOGO ------------------------------*/
+/**The logo's div box. The logo image will be stored inside. This sets the position of it**/
+#logo {
+	float: left;
+	position: absolute;
+	top: 89px;
+	left: 150px;
+	width:150px;
+	height:40px;
+}
+
+/**The logo image will have 50% height of the logo div and 100% width**/
+#logoimage{
+	width:100%;
+	height:50%;
+}
+
+/*------------------------------ SHOPPING CART ------------------------------*/
+/**The cart div which sets the position of the shopping cart image (cartimage)**/
+#cart {
+	float: right;
+	position: absolute;
+	top: 20px;
+	left: 1280px;
+	width:30px;
+	height:30px;
+}
+
+/**The cart image size is set dependent on the div size of the cart div (above)**/
+#cartimage {
+	width:100%;
+	height:87%;
+}
+
+/*------------------------------ HEADER NAVIGATION (UL) - Works with headeroptions(DIV) ------------------------------*/
+#headernavigation {
+	display: inline-block;
+	list-style: none;
+	line-height: 30px;
+	margin: 0;
+	padding: 0;
+	width: 1000px;
+	font-size: 13px;
+	padding-left: 25px;
+}
+#headernavigation li a {
+	color: #818181;
+	font-size: 13px;
+	line-height: 30px;
+	text-decoration: none;
+}
+#headernavigation li a:hover {
+	color: #000;
+}
+#headernavigation li.active a {
+	color: #f99600;
+}
+#headernavigation li {
+	display: inline;
+}
+
+/*------------------------------ NAVIGATION (UL) - Works with Header(DIV) ------------------------------*/
+#navigation {
+	display: inline-block;
+	list-style: none;
+	line-height: 30px;
+	margin: 0;
+	padding: 0;
+	width: 1000px;
+}
+#navigation ul {
+	display: inline-block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#navigation li {
+	float: left;
+	width: 150px;
+	text-align: center;
+}
+#navigation li a {
+	color: black;
+	font-size: 15px;
+	line-height: 30px;
+	text-decoration: none;
+}
+#navigation li a:hover {
+	color: #000;
+}
+#navigation li.active a {
+	color: #f99600;
+}
+/*------------------------------ CONTENTS ------------------------------*/
+#contents {
+	min-height: 510px;
+	width: 880px;
+	margin: 0px 0px 0px 200px;
+	padding: 54px 40px;
+}
+h1 {
+	color: #3e3e3e;
+	font-size: 30px;
+	font-weight: normal;
+	line-height: 30px;
+	margin: 0 0 30px;
+}
+h2 {
+	color: #2c2c2c;
+	font-size: 24px;
+	font-weight: normal;
+	line-height: 24px;
+	margin: 0 0 30px;
+}
+p {
+	color: #585858;
+	font-size: 16px;
+	line-height: 24px;
+	margin: 0 0 30px;
+}
+p a {
+	color: #585858;
+}
+
+/**Used to fix the OK button in account settings**/
+#contents .simpletext {
+	width: 920px;
+	margin: 0 auto;
+	float: left;
+}
+
+/************** Pages ************************/
+
+/************************************* INDEX PAGE*************************************/
+/** For the circles so that when the user points at it, it will show the pointer **/
+img.circle_links {
+	cursor: pointer;
+	width:20px;
+	height:20px;
+}
+
+/**Positions and sets the size of the div box where it will store the 50% off sale image**/
+#sales{
+	position: absolute;
+	left: 260px;
+	top: 350px;
+	width:430px;
+	height:210px;
+}
+
+/**Makes the image 50% height/width of the sales div (above)**/
+#fiftyoffsale{
+	width:50%;
+	height:50%;
+}
+
+/**Sets the size of the search bar at the top of every page (not just index)**/
+#searchbar{
+	width: 600px; 
+	height: 30px;
+}
+
+/**Sets the size of the submit button for the search bar**/
+#searchbarsubmit{
+	width:80px; 
+	height:35px;
+}
+
+/**Creates a border and rounded edges for the image slider display**/
+#onsaledisplay{
+	background-color:#fff;
+	border:2px solid silver;
+	border-radius: 6px;
+}
+
+/**Creates a border for the div which holds the circles and gives it a border**/
+#onsaledisplaycircles{
+	width:876px;
+	height:50px;
+}
+
+/************************************* SIGN IN PAGE *************************************/
+/** The sign in box where the user enters their details **/
+#signinbox{
+	float: left;
+	border-radius: 4px;
+	width:430px; 
+	height:320px; 
+	border:2px solid #000;
+}
+
+/**The register box where the user can press the button to be redirected to the register page**/
+#registerhere{
+	float: right;
+	border-radius: 4px;
+	width:430px; 
+	height:320px; 
+	border:2px solid #000;
+}
+
+#signintext{
+	width:300px;
+	height:30px;
+}
+
+#signinsubmit{
+	width:100px;
+	height:30px;
+}
+
+#signinregbutton{
+	width:150px;
+	height:40px;
+}
+
+/************************************* REGISTER PAGE *************************************/
+
+#registercontents{
+	width:900px; 
+	height:460px; 
+	border:2px solid #000;
+}
+
+/** The register box, allows the different textboxes to be side by side instead of all going down like a list**/
+#registercontents ul{
+	display: inline-block;
+}
+
+#registertextbox{
+	width:300px; 
+	height:30px;
+}
+
+#registerselect{
+	width:305px; 
+	height:35px
+}
+
+#registersubmit{
+	width:100px; 
+	height:30px
+}
+
+/************************************* PRODUCT PAGE *************************************/
+/** Puts the product preview image on the right side of the page**/
+#productpreview{
+	float: right;
+	width:40%;
+	height:40%;
+	border:1px solid #000;
+}
+
+/**Puts the product description on the left side and makes the width of the div 500px**/
+#productdescription{
+	float: left;
+	width: 500px;
+}
+
+/**Makes the add to cart div which contains 'in stock', 'add to cart button', 'quantity' on the right side and under the product preview**/
+#addtocart{
+	float: right;
+	width:352px;
+	height:100px;
+}
+
+/**Makes the quantity in the addtocart box on the right side, opposite of the in stock text**/
+#quantity{
+	float: right;
+}
+
+/**Makes the in stock text on the left side opposite of the quantity**/
+#instock{
+	float: left;
+}
+
+.shareproduct{
+	width:20%;
+	height:20%;
+}
+
+.starsizes{
+	width:5%;height:5%;
+}
+
+#productquantity{
+	width:50px; 
+	height:30px
+}
+
+#productsubmit{
+	width:150px; 
+	height:40px
+}
+
+/************************************* REVIEWS PAGE *************************************/
+/**Makes a review div at the bottom of the page where all the reviews will be put**/
+.review{
+	width: 750px;
+	font-size: 75%;
+}
+
+/**Inside the review div, make a display picture and put it to the left**/
+.displaypic{
+	float: left;
+}
+
+/**Inside the review div, make a description box and put it on the right opposite of the user display picture**/
+.comment{
+	float: right;
+}
+
+/************************************* COMPARE PAGE *************************************/
+/**Makes a div box to put the first product we are comparing on the left**/
+#productcompareleft{
+	float: left;
+	width: 400px;
+}
+
+/**Makes a div box to put the second product we are comparing on the right**/
+#productcompareright{
+	float: right;
+	width: 400px;
+}
+
+#productimagediv{
+	width:400px;
+	height:300px;
+}
+
+#productimage{
+	width:95%;
+	height:75%;
+}
+
+#compareproductdescription{
+	width:400px;
+	height:350px;
+}
+
+#comparerating{
+	width:60%;
+	height:60%;
+}
+
+/**Draws a line in between the left product box and the right product box**/
+.divider{
+    position:absolute;
+    left:670px;
+    top:335px;
+	height:1000px;
+    border-left:1px solid silver;
+	opacity: 0.5;
+}
+
+#comparereviews{
+	width:400px;
+}
+
+#comparedisplaypic{
+	width:7%;
+	height:7%;
+}
+
+/************************************* ALL PRODUCT PAGES *************************************/
+/**Makes the div have a rounder corner and sets the size and border**/
+.filterbox{
+	border-radius: 4px;
+	width:800px;
+	height:30px;
+	border:1px solid #000;
+}
+
+/**The product's div box**/
+.productbox{
+	background-color:#fff;
+	width:220px;
+	height:350px; 
+	border:1px solid #000;
+	display: table-cell;
+}
+
+.productbikebox{
+	background-color:#fff;
+	width:220px;
+	height:270px; 
+	border:1px solid #000;
+	display: table-cell;
+}
+
+
+/**The product's image div box**/
+.productimage{
+	width:200px;
+}
+
+/**The actual image which goes into productimage div (above)**/
+.pimage{
+	width:100%;
+	height:54%
+}
+
+/**Product submit button size**/
+.productsubmitbutton{
+	width:80px;
+	height:25px;
+}
+
+/**The sizes of the filter drop down**/
+.productfilterone{
+	width:50px;
+}
+
+.productfiltertwo{
+	width:110px;
+}
+
+
+/************************************* ACCOUNT MENU PAGES *************************************/
+/**The menu on the left side of the page. This is the style for it.**/
+table, th{
+    border: 2px solid silver;
+    border-collapse: collapse;
+}
+table, td {
+    border: 1px solid silver;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+}
+
+/**The positioning/size of the menu**/
+#accountmenu{
+	position: absolute;
+	top: 224px;
+	width:100px;
+	height:400px;
+	left: -2px;
+	top: 223px;
+}
+
+/**Set account menu's table width**/
+#accounttablewidth{
+	width:160%;
+}
+
+/**Sets bg colour of table data**/
+.accounttabledatabg{
+	background-color: #DBFF94;
+}
+
+/** Highlights / Unhighlights the current page**/
+.unhighlightmenuoption{
+	color: black;
+	text-decoration: none;
+}
+
+.highlightmenuoption{
+	color: #f99600;
+	text-decoration: none;
+}
+
+/************************************* ACCOUNT SETTING PAGE *************************************/
+/** Bottom menu square - Account Setting **/
+#ambottommenusquare{
+	height:152px;
+}
+
+/**Positioning of tables in the account pages, such as the shopping cart, track orders etc. **/
+#ordertable{
+	position: absolute;
+	top: 330px;
+}
+
+.textentrywidth{
+	width:150px;
+}
+
+/************************************* ADD PRODUCT PAGE *************************************/
+/**Sets width of the product table**/
+#addproducttablewidth{
+	width:400px;
+}
+
+/**Sets the left/right column left of the table**/
+#addproductleftcolumnwidth{
+	width:120px;
+}
+
+.addproductrightcolumnwidth{
+	width:150px;
+}
+
+/**Browse preview image size**/
+#addproductprevimg{
+	width:100%;
+	height:8%;
+}
+
+/**browse button size**/
+#addproductbrowsebuttonsize{
+	width:70px;
+	height:35px;
+}
+
+/**Description size**/
+#addproductdescription{
+	width:250px;
+	height:150px;
+	resize:none;
+}
+
+/**Submit button size**/
+#addproductsubmitbuttonsizediv{
+	width:400px;
+	height:30px;
+}
+
+#addproductsubmitbuttonsize{
+	width:80px;
+	height:30px;
+}
+
+/**Product added div to show a message to the user**/
+#addproductproductadded{
+	width:400px;
+	height:30px;
+}
+
+/**menubox**/
+#addproductbox{
+	height:270px;
+}
+
+/************************************* CHECK OUT PAGES *************************************/
+/**Makes the div have a rounder corner**/
+#steponecheckout{
+	border-radius: 6px;
+	width:300px;
+	height:223px;
+	background-color:#DBFF94;
+	padding:5px;
+}
+
+/**personal details edit button**/
+#steponecheckouteditbuttondiv{
+	width:100px;
+	height:70px;
+}
+
+#steponecheckouteditbutton{
+	width:70px; 
+	height:35px;
+}
+
+/**Step 2 check out**/
+#steptwocheckout{
+	border-radius: 6px;
+	width:280px;
+	height:267px;
+	background-color: #DBFF94;
+	padding:5px;
+}
+
+#steptwocheckoutcredit{
+	width:270px;
+	height:208px;
+	background-color:#DBFF94;
+	padding:5px;
+}
+
+#steptwocheckoutpaypal{
+	width:280px;
+	height:257px;
+	background-color: #DBFF94;
+	padding:5px;
+}
+
+/**unhighlight links**/
+#linkunhighlight{
+	text-decoration: none;
+}
+
+/**Sets width of the input textbox**/
+#steptwoinputwidth{
+	width:170px;
+}
+
+#steptwoinputwidthcredit{
+	width:150px;
+}
+
+#steptwosecuritycodecredit{
+	width:80px;
+}
+
+#steptwopaypalbutton{
+	width:80px;
+	height:25px;
+}
+
+#stepthreebuttonsize{
+	width:80px;
+	height:30px;
+}
+
+/**Checkout bank box**/
+#checkoutbankbox{
+	height:509px;
+}
+
+/**checkout credit box**/
+#checkoutcreditbox{
+	height:450px;
+}
+
+/**Check out paypal box**/
+#checkoutpaypalbox{
+	height:499px;
+}
+
+/************************************* CONFIRM PAGE *************************************/
+
+.emptytablerows{
+	height:33px;
+}
+
+/************************************* CUSTOMER SERVICE PAGE *************************************/
+
+#csfaq{
+	width:100px;
+	height:30px
+}
+
+#csos{
+	width:110px;
+	height:30px
+}
+
+#cscontents{
+	width:900px; 
+	height:460px; 
+}
+
+/** The register box, allows the different textboxes to be side by side instead of all going down like a list**/
+#cscontents ul{
+	display: inline-block;
+}
+
+/************************************* EDIT PRICE PAGE *************************************/
+#productupdated{
+	width:240px;
+	height:20px;
+}
+
+/************************************* MANAGE EMPLOYEES PAGE *************************************/
+#metablewidth{
+	width: 900px;
+}
+
+#mecolumnwidth{
+	width:140px;
+}
+
+#meremovebutton{
+	width: 140px;
+	height:30px;
+}
+
+#meaddbutton{
+	width: 180px;
+}
+
+#mesubmitbutton{
+	width:100px;
+	height:30px;
+}
+
+#mebox{
+	height:311px;
+}
+
+/************************************* MANAGE EMPLOYEES PAGE *************************************/
+#myaccountbox{
+	height: 190px;
+}
+
+/************************************* ONLINE SUPPORT PAGE *************************************/
+#ostopwindow{
+	width:800px; 
+	height:300px; 
+	resize:none;
+}
+
+#osbottomwindow{
+	width:800px; 
+	height:100px;
+	resize:none;
+}
+
+#ossubmit{
+	width:100px; 
+	height:30px;
+}
+
+/************************************* ORDER STOCK PAGE *************************************/
+#osquantity{
+	width:40px;
+}
+
+#ossubmitdiv{
+	width:295px; 
+	height:30px;
+}
+
+#ossubmit{
+	width:60px;
+	height:30px
+}
+
+#ostablewidth{
+	width: 700px;
+}
+
+#ostablepn{
+	width: 100px;
+}
+
+#ostableprodn{
+	width: 80px;
+}
+
+#ostablequant{
+	width: 30px;
+}
+
+/************************************* REMOVE PRODUCT PAGE *************************************/
+#rpsubmitdiv{
+	width:300px;"
+}
+
+#removesuccess{
+	width:300px;
+	height:30px;
+}
+
+/************************************* REVIEWS PAGE *************************************/
+#reviewdiv{
+	width:850px;
+}
+
+#reviewdp{
+	width:7%;
+	height:7%
+}
+
+#reviewcomment{
+	width:780px;
+}
+
+#reviewrating{
+	width:15%;
+	height:15%;
+}
+
+#reviewback{
+	width:850px;
+	height:60px;
+}
+
+/************************************* SEARCH RESULTS PAGE *************************************/
+#searchresultsdp{
+	width:17%;
+	height:17%;
+}
+
+#searchresultscomment{
+	width:650px;
+}
+
+/************************************* SHOPPING CART PAGE *************************************/
+#sctable{
+	width:600px;
+}
+
+/************************************* TRACK ORDERS PAGE *************************************/
+#trackotablewidth{
+	width:900px;
+}
+
+/************************************* TRACK ORDERS PAGE *************************************/
+#requiredfield{
+	color: red;
+}
+
+	
+/*------------------------------ FOOTER ------------------------------*/
+#footer {
+	background-color: #DBFF94;
+	border-top: 1px solid silver;
+	padding: 0px 20px;
+	width:1309px;
+	height:60px;
+	z-index:99;
+	position: relative;
+}
+#footer > div {
+	width: 920px;
+	margin: 0 auto;
+}
+#footer p {
+	font-size: 12px;
+	line-height: 30px;
+}
+
+/******** CENTER PAGE ***************/
+#centerpage{
+	margin: 0 auto;
+	width: 1349px;
+	border: 1px solid silver;
+	position: relative;
+}
